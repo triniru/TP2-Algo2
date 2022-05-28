@@ -1,0 +1,15 @@
+#ifndef NOVELA_H_INCLUDED
+#define NOVELA_H_INCLUDED
+
+#include "lectura.h"
+
+class Novela: public Lectura{
+protected:
+    char genero;
+public:
+    Novela (string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, char genero);
+
+   void mostrar_novela();
+};
+
+#endif // NOVELA_H_INCLUDED
