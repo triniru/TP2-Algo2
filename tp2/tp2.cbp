@@ -32,7 +32,19 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="cuento.cpp" />
+		<Unit filename="cuento.h" />
+		<Unit filename="escritor.cpp" />
+		<Unit filename="escritor.h" />
+		<Unit filename="historica.cpp" />
+		<Unit filename="historica.h" />
+		<Unit filename="lectura.cpp" />
+		<Unit filename="lectura.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="novela.cpp" />
+		<Unit filename="novela.h" />
+		<Unit filename="poema.cpp" />
+		<Unit filename="poema.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

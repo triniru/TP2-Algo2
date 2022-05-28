@@ -4,12 +4,12 @@
 #include "lectura.h"
 
 class Novela: public Lectura{
-//protected:
-    //algo para el genero
+protected:
+    char genero;
 public:
-    Novela (char* titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor/*, genero*/);
+    Novela (string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, char genero);
 
-
+   void mostrar_novela();
 };
 
 #endif // NOVELA_H_INCLUDED

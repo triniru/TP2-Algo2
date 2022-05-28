@@ -5,10 +5,10 @@
 
 class Cuento : public Lectura {
 protected:
-    char* libro;
+    string libro;
 
 public:
-    Cuento(char* titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, char* libro);
+    Cuento(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, string libro);
 };
 
 

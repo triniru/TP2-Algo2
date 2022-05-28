@@ -8,7 +8,7 @@ protected:
     int versos;
 
 public:
-    Poema(char* titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, int versos);
+    Poema(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, int versos);
 
 };
 

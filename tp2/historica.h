@@ -5,13 +5,10 @@
 
 class Novela_historica : public Novela{
 protected:
-    //genero
-    char* tema;
+    char genero;
+    string tema;
 
 public:
-    Novela_historica (char* titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, /*genero*/);
+    Novela_historica (string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, char genero);
 
 };
-
-
-#endif // HISTORICA_H_INCLUDED

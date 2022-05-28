@@ -1,6 +1,6 @@
 #include "poema.h"
 
-Poema :: Poema(char* titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, int versos) : Lectura(
+Poema :: Poema(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, int versos) : Lectura(
   titulo, minutos_lectura, anio_publicacion, escritor){
 
         this->versos = versos;

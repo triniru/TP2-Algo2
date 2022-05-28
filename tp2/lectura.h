@@ -3,19 +3,20 @@
 
 #include<string>
 #include <iostream>
-//#include "constantes.h"
+#include "escritor.h"
+
+using namespace std;
 
 class Lectura{
 
 protected:
-    char* titulo;
+    string titulo;
     int minutos_lectura;
     int anio_publicacion;
     Escritor* escritor;
 
-
 public:
-    Lectura (char* titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor);
+    Lectura (string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor);
 };
 
 #endif // LECTURA_H_INCLUDED

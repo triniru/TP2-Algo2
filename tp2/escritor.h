@@ -1,15 +1,24 @@
 #ifndef ESCRITOR_H_INCLUDED
 #define ESCRITOR_H_INCLUDED
 
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 class Escritor{
 protected:
-    char* nombre_y_apellido;
-    char* nacionalidad;
+    string nombre_y_apellido;
+    string nacionalidad;
     int anio_nacimiento;
     int anio_fallecimiento;
 
 public:
-    Escritor(char* nombre_y_apellido, char* nacionalidad, int anio_nacimiento, int anio_fallecimiento);
+    Escritor(string nombre_y_apellido, string nacionalidad, int anio_nacimiento, int anio_fallecimiento);
+
+    void mostrar_escritor();
+
+    string get_nombre_y_appellido();
 };
 
 
