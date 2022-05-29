@@ -8,7 +8,15 @@ protected:
     string libro;
 
 public:
+    //PRE
+    //POS
     Cuento(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, string libro);
+    //PRE
+    //POS
+    void mostrar_libro();
+    //PRE
+    //POS
+    void mostrar_cuento();
 };
 
 

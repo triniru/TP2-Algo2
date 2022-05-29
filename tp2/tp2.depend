@@ -1,45 +1,47 @@
 # depslib dependency file v1.0
-1653756934 source:d:\tp2-algo2\tp2\escritor.cpp
+1653793345 source:d:\tp2-algo2\tp2\escritor.cpp
 	"escritor.h"
 
-1653756934 d:\tp2-algo2\tp2\escritor.h
+1653792797 d:\tp2-algo2\tp2\escritor.h
 	<iostream>
 	<string>
 
-1653753630 source:d:\tp2-algo2\tp2\cuento.cpp
+1653793826 source:d:\tp2-algo2\tp2\cuento.cpp
 	"cuento.h"
 
-1653753630 d:\tp2-algo2\tp2\cuento.h
+1653793730 d:\tp2-algo2\tp2\cuento.h
 	"lectura.h"
 
-1653753630 d:\tp2-algo2\tp2\lectura.h
+1653792092 d:\tp2-algo2\tp2\lectura.h
 	<string>
 	<iostream>
 	"escritor.h"
 
-1653753630 source:d:\tp2-algo2\tp2\lectura.cpp
+1653792941 source:d:\tp2-algo2\tp2\lectura.cpp
 	"lectura.h"
 
-1653756831 source:d:\tp2-algo2\tp2\main.cpp
+1653761989 source:d:\tp2-algo2\tp2\main.cpp
 	<iostream>
+	<fstream>
+	<string>
 	"escritor.h"
 	"novela.h"
 
-1653753630 source:d:\tp2-algo2\tp2\poema.cpp
+1653758813 source:d:\tp2-algo2\tp2\poema.cpp
 	"poema.h"
 
-1653753630 d:\tp2-algo2\tp2\poema.h
+1653758823 d:\tp2-algo2\tp2\poema.h
 	"lectura.h"
 
-1653753630 source:d:\tp2-algo2\tp2\novela.cpp
+1653793603 source:d:\tp2-algo2\tp2\novela.cpp
 	"novela.h"
 
-1653753630 d:\tp2-algo2\tp2\novela.h
+1653792042 d:\tp2-algo2\tp2\novela.h
 	"lectura.h"
 
-1653753630 source:d:\tp2-algo2\tp2\historica.cpp
+1653794130 source:d:\tp2-algo2\tp2\historica.cpp
 	"historica.h"
 
-1653753630 d:\tp2-algo2\tp2\historica.h
+1653793995 d:\tp2-algo2\tp2\historica.h
 	"novela.h"
 
