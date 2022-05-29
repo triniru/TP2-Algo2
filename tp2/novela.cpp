@@ -7,7 +7,17 @@ Novela :: Novela(string titulo, int minutos_lectura, int anio_publicacion, Escri
 
 }
 
-void Novela:: mostrar_novela(){
-    cout << "El titulo de la novela es: " << titulo << endl;
-    cout << "El escritor de " << titulo << " es " << escritor->get_nombre_y_appellido() << endl;
+void Novela::mostrar_genero(){
+    if(genero == 'H'){
+        cout << titulo << " es una novela historica." << endl;
+    }else {
+    cout << "Esta novela es de genero " << genero << "." << endl;
+    }
 }
+
+void Novela:: mostrar_novela(){
+    mostrar_lectura();
+    mostrar_genero();
+}
+
+

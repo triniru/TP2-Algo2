@@ -5,11 +5,18 @@
 
 class Poema : public Lectura{
 protected:
-    int versos;
+    int cantidad_versos;
 
 public:
-    Poema(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, int versos);
-
+    //PRE
+    //POS
+    Poema(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, int cantidad_versos);
+    //PRE
+    //POS
+    void mostrar_cantidad_versos();
+    //PRE
+    //POS
+    void mostrar_poema();
 };
 
 #endif // POEMA_H_INCLUDED
