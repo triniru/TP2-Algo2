@@ -6,18 +6,18 @@
 class Novela_historica : public Novela{
 protected:
     char genero;
-    string tema;
+    char* tema;
 
 public:
     //PRE
     //POS
-    Novela_historica (string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, char genero);
+    Novela_historica (string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, char genero, char* tema);
     //PRE
     //POS
     void mostrar_tema();
     //PRE
     //POS
-    void mostrar_novela_historica();
+    void mostrar_todo();
 };
 
 #endif

@@ -27,7 +27,11 @@ public:
 	//Consulta
 	//PRE: la lista no puede estar vacía
 	//POS:
-	Dato consulta();
+	Dato consulta_primero();
+
+    //PRE
+    //POS
+    Dato consulta_ultimo();
 
 	//Vacia
 	//PRE: -
@@ -35,7 +39,7 @@ public:
 	bool vacia();
 
 	//Destructor
-	~Cola();
+	~Lista();
 };
 
 #endif

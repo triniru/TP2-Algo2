@@ -17,7 +17,7 @@ public:
     void mostrar_genero();
     //PRE
     //POS
-    void mostrar_novela();
+    void mostrar_todo();
 };
 
 #endif // NOVELA_H_INCLUDED

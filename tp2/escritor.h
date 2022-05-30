@@ -34,10 +34,10 @@ public:
     void mostrar_escritor();
     //PRE
     //POS
-    string get_nombre_y_appellido();
+    string obtener_nombre_y_appellido();
     //PRE
     //POS
-    int comparar (Escritor* escritor, Escritor* escritor_a_comparar);
+    int comparar (Escritor* escritor_a_comparar);
 };
 
 

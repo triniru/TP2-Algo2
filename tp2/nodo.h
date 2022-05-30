@@ -1,7 +1,8 @@
 #ifndef NODO_H_INCLUDED
 #define NODO_H_INCLUDED
+#include "escritor.h"
 
-typedef void* Dato;
+typedef Escritor* Dato;
 
 class Nodo{
 private:
@@ -33,7 +34,12 @@ public:
 
 	//PRE
 	//POS
-	Nodo* ontener_anterior();
+	Nodo* obtener_anterior();
+
+	//PRE
+	//POS
+	void borrar();
+
 };
 
 #endif // NODO_H_INCLUDED
