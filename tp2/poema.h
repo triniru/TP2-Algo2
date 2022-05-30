@@ -16,7 +16,7 @@ public:
     void mostrar_cantidad_versos();
     //PRE
     //POS
-    void mostrar_poema();
+    void mostrar_todo();
 };
 
 #endif // POEMA_H_INCLUDED

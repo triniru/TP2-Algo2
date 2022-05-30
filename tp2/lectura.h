@@ -33,10 +33,10 @@ public:
     void mostrar_esctritor();
     //PRE
     //POS
-    void mostrar_lectura();
+    virtual void mostrar_todo() = 0;
     //PRE
     //POS
-    string get_titulo();
+    string obtener_titulo();
     //PTR
     //POS
     int comparar(Lectura* lectura, Lectura* lectura_a_comparar);

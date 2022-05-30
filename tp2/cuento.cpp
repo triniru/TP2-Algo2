@@ -10,7 +10,14 @@ void Cuento::mostrar_libro(){
     cout << "El cuento " << titulo << " se encuentra en el libro " << libro << '.' << endl;
 }
 
-void Cuento::mostrar_cuento(){
-    mostrar_lectura();
+void Cuento::mostrar_todo(){
+    mostrar_titulo();
+    mostrar_minutos_lectura();
+    mostrar_anio_publicacion();
+    mostrar_esctritor();
     mostrar_libro();
+}
+
+string Cuento::obtener_libro(){
+    return libro;
 }

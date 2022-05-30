@@ -16,7 +16,8 @@ public:
     void mostrar_libro();
     //PRE
     //POS
-    void mostrar_cuento();
+    string obtener_libro();
+    void mostrar_todo();
 };
 
 

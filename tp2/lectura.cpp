@@ -9,37 +9,37 @@ Lectura::Lectura(string titulo, int minutos_lectura, int anio_publicacion, Escri
     this->escritor = escritor;
 }
 
-void Lectura::mostrar_titulo(){
+void Lectura::mostrar_titulo() {
     cout << "El titulo de la novela es: " << titulo << endl;
 }
 
-void Lectura::mostrar_minutos_lectura(){
+void Lectura::mostrar_minutos_lectura() {
     cout << "Se estima que es posible leer esta novela en " << minutos_lectura << " minutos." << endl;
 }
 
-void Lectura::mostrar_anio_publicacion(){
+void Lectura::mostrar_anio_publicacion() {
     cout << "Esta novela se publico en el anio " << anio_publicacion << endl;
 }
 
-void Lectura::mostrar_esctritor(){
+void Lectura::mostrar_esctritor() {
     escritor->mostrar_nombre_escritor();
 }
 
-void Lectura::mostrar_lectura(){
+/*void Lectura::mostrar_lectura() {
     mostrar_titulo();
     mostrar_minutos_lectura();
     mostrar_anio_publicacion();
     mostrar_esctritor();
-}
+}*/
 
-string Lectura::get_titulo(){
+string Lectura::obtener_titulo(){
     return titulo;
 }
 
 int Lectura::comparar(Lectura* lectura, Lectura* lectura_a_comparar){
-    if(lectura->get_titulo() < lectura_a_comparar->get_titulo()){
+    if(lectura->obtener_titulo() < lectura_a_comparar->obtener_titulo()){
         return -1;
-    } else if(lectura->get_titulo() > lectura_a_comparar->get_titulo()){
+    } else if(lectura->obtener_titulo() > lectura_a_comparar->obtener_titulo()){
         return 1;
     } else {
         return 0;
