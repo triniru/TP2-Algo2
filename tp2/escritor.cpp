@@ -42,6 +42,18 @@ string Escritor :: obtener_nombre_y_appellido(){
     return nombre_y_apellido;
 }
 
+string Escritor :: obtener_nacionalidad(){
+    return nacionalidad;
+}
+
+int Escritor :: obtener_anio_nacimiento() {
+    return anio_nacimiento;
+}
+
+int Escritor :: obtener_anio_fallecimiento() {
+    return anio_fallecimiento;
+}
+
 int Escritor ::comparar(Escritor* escritor_a_comparar) {
     if(this->obtener_nombre_y_appellido() == escritor_a_comparar->obtener_nombre_y_appellido()){
         return 0;

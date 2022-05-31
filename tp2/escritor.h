@@ -37,6 +37,16 @@ public:
     string obtener_nombre_y_appellido();
     //PRE
     //POS
+    string obtener_nacionalidad();
+    //PRE
+    //POS
+    int obtener_anio_nacimiento();
+    //PRE
+    //POS
+    int obtener_anio_fallecimiento();
+    //PRE
+    //POS
+
     int comparar (Escritor* escritor_a_comparar);
 };
 
