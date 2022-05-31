@@ -49,6 +49,9 @@ Dato Lista::consulta_ultimo(){
     return this->ultimo->obtener_dato();
 }
 
+bool vacia(){
+    return this->primero == nullptr;
+}
 
 Lista :: ~Lista() {
     while(this->primero != nullptr){
