@@ -58,7 +58,7 @@ void Escritor :: mostrar_escritor() {
     mostrar_anio_fallecimiento();
 }
 
-int Escritor :: comparar(Escritor* escritor_a_comparar) {
+int Escritor ::comparar(Escritor* escritor_a_comparar) {
     if(this->obtener_nombre_y_appellido() == escritor_a_comparar->obtener_nombre_y_appellido()){
         return 0;
     } else {
