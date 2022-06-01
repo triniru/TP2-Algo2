@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Lectura{
+class Lectura {
 
 protected:
     string titulo;
@@ -16,9 +16,13 @@ protected:
     Escritor* escritor;
 
 public:
+    //CONSTRUCTOR
     //PRE
     //POS
     Lectura (string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor);
+
+
+    //MOSTRAR
     //PRE
     //POS
     void mostrar_titulo();
@@ -34,13 +38,20 @@ public:
     //PRE
     //POS
     virtual void mostrar_todo() = 0;
+
+    //OBTENER
     //PRE
     //POS
     string obtener_titulo();
+
+    //COMPARAR
     //PTR
     //POS
     int comparar(Lectura* lectura, Lectura* lectura_a_comparar);
 
+    //PRE
+    //POS
+    virtual ~Lectura() = 0 ;
 };
 
 #endif // LECTURA_H_INCLUDED

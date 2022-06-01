@@ -4,7 +4,7 @@
 
 typedef Escritor* Dato;
 
-class Nodo{
+class Nodo {
 private:
 	Dato dato;
 	Nodo* anterior;

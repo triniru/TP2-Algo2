@@ -1,11 +1,11 @@
 #include "lista.h"
 
-Lista :: Lista(){
+Lista :: Lista() {
     this->primero = nullptr;
     this->ultimo = nullptr;
 }
 
-void Lista::alta(Dato elemento){
+void Lista :: alta(Dato elemento) {
     Nodo* nodo = new Nodo(elemento);
     if(this->primero == nullptr){
         this->primero = nodo;
@@ -17,14 +17,14 @@ void Lista::alta(Dato elemento){
     }
 }
 
-void Lista::baja(Dato elemento){
+void Lista :: baja(Dato elemento) {
     Nodo* aux = this->primero;
 
-    while(aux->obtener_dato()->comparar(elemento) != 0 && aux != nullptr){
+    while(aux->obtener_dato()->comparar(elemento) != 0 && aux != nullptr) {
         aux = aux->obtener_siguiente();
     }
 
-    if(aux != nullptr){
+    if(aux != nullptr) {
         if(aux != this->primero){
             aux->obtener_anterior()->cambiar_siguiente(aux->obtener_siguiente());
         } else {
@@ -41,15 +41,15 @@ void Lista::baja(Dato elemento){
     }
 }
 
-Dato Lista::consulta_primero(){
+Dato Lista :: consulta_primero() {
     return this->primero->obtener_dato();
 }
 
-Dato Lista::consulta_ultimo(){
+Dato Lista :: consulta_ultimo(){
     return this->ultimo->obtener_dato();
 }
 
-bool vacia(){
+bool Lista :: vacia() {
     return this->primero == nullptr;
 }
 

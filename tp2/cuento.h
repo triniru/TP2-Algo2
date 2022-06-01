@@ -11,13 +11,22 @@ public:
     //PRE
     //POS
     Cuento(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, string libro);
+
+
+    //PRE
+    //POS
+    string obtener_libro();
+
     //PRE
     //POS
     void mostrar_libro();
     //PRE
     //POS
-    string obtener_libro();
     void mostrar_todo();
+
+    //PRE
+    //POS
+    ~Cuento ();
 };
 
 
