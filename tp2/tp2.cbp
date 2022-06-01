@@ -36,6 +36,8 @@
 		<Unit filename="cuento.h" />
 		<Unit filename="escritor.cpp" />
 		<Unit filename="escritor.h" />
+		<Unit filename="genero.cpp" />
+		<Unit filename="genero.h" />
 		<Unit filename="historica.cpp" />
 		<Unit filename="historica.h" />
 		<Unit filename="lectura.cpp" />

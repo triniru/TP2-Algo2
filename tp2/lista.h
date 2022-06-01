@@ -3,7 +3,7 @@
 
 #include "nodo.h"
 
-class Lista{
+class Lista {
 private:
 	Nodo* primero;
 	Nodo* ultimo;

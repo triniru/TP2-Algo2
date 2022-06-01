@@ -9,6 +9,7 @@ Lectura::Lectura(string titulo, int minutos_lectura, int anio_publicacion, Escri
     this->escritor = escritor;
 }
 
+
 void Lectura::mostrar_titulo() {
     cout << "El titulo de la novela es: " << titulo << endl;
 }
@@ -32,16 +33,19 @@ void Lectura::mostrar_esctritor() {
     mostrar_esctritor();
 }*/
 
-string Lectura::obtener_titulo(){
+string Lectura :: obtener_titulo() {
     return titulo;
 }
 
-int Lectura::comparar(Lectura* lectura, Lectura* lectura_a_comparar){
-    if(lectura->obtener_titulo() < lectura_a_comparar->obtener_titulo()){
+int Lectura :: comparar(Lectura* lectura, Lectura* lectura_a_comparar) {
+    if(lectura->obtener_titulo() < lectura_a_comparar->obtener_titulo()) {
         return -1;
-    } else if(lectura->obtener_titulo() > lectura_a_comparar->obtener_titulo()){
+    } else if(lectura->obtener_titulo() > lectura_a_comparar->obtener_titulo()) {
         return 1;
     } else {
         return 0;
     }
 }
+
+
+Lectura :: ~Lectura() {}

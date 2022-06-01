@@ -1,23 +1,23 @@
 # depslib dependency file v1.0
-1653874853 source:d:\tp2-algo2\tp2\escritor.cpp
+1654102157 source:d:\tp2-algo2\tp2\escritor.cpp
 	"escritor.h"
 
-1653868804 d:\tp2-algo2\tp2\escritor.h
+1654102813 d:\tp2-algo2\tp2\escritor.h
 	<iostream>
 	<string>
 
-1653868384 source:d:\tp2-algo2\tp2\cuento.cpp
+1654102028 source:d:\tp2-algo2\tp2\cuento.cpp
 	"cuento.h"
 
-1653868542 d:\tp2-algo2\tp2\cuento.h
+1654102027 d:\tp2-algo2\tp2\cuento.h
 	"lectura.h"
 
-1653859007 d:\tp2-algo2\tp2\lectura.h
+1654102814 d:\tp2-algo2\tp2\lectura.h
 	<string>
 	<iostream>
 	"escritor.h"
 
-1653868714 source:d:\tp2-algo2\tp2\lectura.cpp
+1654101855 source:d:\tp2-algo2\tp2\lectura.cpp
 	"lectura.h"
 
 1653874942 source:d:\tp2-algo2\tp2\main.cpp
@@ -28,33 +28,40 @@
 	"novela.h"
 	"lista.h"
 
-1653868739 source:d:\tp2-algo2\tp2\poema.cpp
+1654041822 source:d:\tp2-algo2\tp2\poema.cpp
 	"poema.h"
 
-1653868613 d:\tp2-algo2\tp2\poema.h
+1654041775 d:\tp2-algo2\tp2\poema.h
 	"lectura.h"
 
-1653875087 source:d:\tp2-algo2\tp2\novela.cpp
+1654102190 source:d:\tp2-algo2\tp2\novela.cpp
 	"novela.h"
 
-1653868666 d:\tp2-algo2\tp2\novela.h
+1654102813 d:\tp2-algo2\tp2\novela.h
 	"lectura.h"
+	"genero.h"
 
-1653868589 source:d:\tp2-algo2\tp2\historica.cpp
+1654102181 source:d:\tp2-algo2\tp2\historica.cpp
 	"historica.h"
 
-1653868558 d:\tp2-algo2\tp2\historica.h
+1654102181 d:\tp2-algo2\tp2\historica.h
 	"novela.h"
 
-1653874558 source:d:\tp2-algo2\tp2\lista.cpp
+1654051361 source:d:\tp2-algo2\tp2\lista.cpp
 	"lista.h"
 
-1653875126 d:\tp2-algo2\tp2\lista.h
+1654102814 d:\tp2-algo2\tp2\lista.h
 	"nodo.h"
 
-1653872563 d:\tp2-algo2\tp2\nodo.h
+1654102813 d:\tp2-algo2\tp2\nodo.h
 	"escritor.h"
 
 1653871458 source:d:\tp2-algo2\tp2\nodo.cpp
 	"nodo.h"
+
+1654048842 d:\tp2-algo2\tp2\genero.h
+	<string>
+
+1654049126 source:d:\tp2-algo2\tp2\genero.cpp
+	"genero.h"
 

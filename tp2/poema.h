@@ -3,7 +3,7 @@
 
 #include "lectura.h"
 
-class Poema : public Lectura{
+class Poema : public Lectura {
 protected:
     int cantidad_versos;
 
@@ -11,12 +11,20 @@ public:
     //PRE
     //POS
     Poema(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, int cantidad_versos);
+
+    //PRE
+    //POS
+    int obtener_cantidad_versos();
     //PRE
     //POS
     void mostrar_cantidad_versos();
     //PRE
     //POS
     void mostrar_todo();
+
+    //PRE
+    //POS
+    ~Poema ();
 };
 
 #endif // POEMA_H_INCLUDED

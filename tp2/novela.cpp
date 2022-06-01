@@ -1,6 +1,6 @@
 #include "novela.h"
 
-Novela :: Novela(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, char genero):Lectura(
+Novela :: Novela(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, genero_t genero) : Lectura(
      titulo, minutos_lectura, anio_publicacion, escritor) {
 
     this->genero = genero;
@@ -8,7 +8,7 @@ Novela :: Novela(string titulo, int minutos_lectura, int anio_publicacion, Escri
 }
 
 void Novela :: mostrar_genero() {
-    if(genero == 'H') {
+    if(genero == HISTORICA) {
         cout << titulo << " es una novela historica." << endl;
     } else {
         cout << titulo << " es una novela de genero " << genero << "." << endl;
@@ -23,4 +23,7 @@ void Novela :: mostrar_todo() {
     mostrar_genero();
 }
 
-
+genero_t Novela :: obtener_genero() {
+    return genero;
+}
+Novela :: ~Novela () {}
