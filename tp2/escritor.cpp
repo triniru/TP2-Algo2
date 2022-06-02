@@ -45,7 +45,7 @@ void Escritor :: mostrar_nombre_escritor() {
 }
 
 void Escritor :: mostrar_nacionalidad() {
-    if (nacionalidad == "¿?") {
+    if (nacionalidad == "ï¿½?") {
         cout << "No se conoce la nacionalidad de " << nombre_y_apellido << "." << endl;
     } else {
         cout << "La nacionalidad de " << nombre_y_apellido << " es " << nacionalidad << endl;
@@ -74,8 +74,6 @@ void Escritor :: mostrar_escritor() {
     mostrar_anio_nacimiento();
     mostrar_anio_fallecimiento();
 }
-
-
 
 int Escritor :: comparar(Escritor* escritor_a_comparar) {
     if(this->obtener_nombre_y_apellido() == escritor_a_comparar->obtener_nombre_y_apellido()) {
