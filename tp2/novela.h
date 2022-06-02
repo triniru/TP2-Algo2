@@ -10,19 +10,28 @@ protected:
     genero_t genero;
 
 public:
-    //PRE
-    //POS
+    //----------Constructor----------
+    //PRE: -
+    //POS: Construye una novela con sus atributos.
     Novela (string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, genero_t genero);
-    //PRE
-    //POS
 
-    void mostrar_genero();
-    //PRE
-    //POS
-    void mostrar_todo();
-    //PRE
-    //POS
+
+    //----------Obtener----------
+    //PRE: -
+    //POS: Devuelve el genero de la novela.
     genero_t obtener_genero();
+
+
+    //----------Mostrar----------
+    //PRE: -
+    //POS: Muestra el genero de la novela.
+    void mostrar_genero();
+    //PRE: -
+    //POS: Muestra toda la informacion de la novela.
+    void mostrar_todo();
+
+
+    //----------Destructor----------
     //PRE
     //POS
     ~Novela();

@@ -19,7 +19,7 @@ void Novela :: mostrar_todo() {
     mostrar_titulo();
     mostrar_minutos_lectura();
     mostrar_anio_publicacion();
-    mostrar_esctritor();
+    mostrar_escritor();
     mostrar_genero();
 }
 

@@ -1,26 +1,26 @@
 # depslib dependency file v1.0
-1654102157 source:d:\tp2-algo2\tp2\escritor.cpp
+1654138748 source:d:\tp2-algo2\tp2\escritor.cpp
 	"escritor.h"
 
-1654102813 d:\tp2-algo2\tp2\escritor.h
+1654135051 d:\tp2-algo2\tp2\escritor.h
 	<iostream>
 	<string>
 
-1654102028 source:d:\tp2-algo2\tp2\cuento.cpp
+1654132142 source:d:\tp2-algo2\tp2\cuento.cpp
 	"cuento.h"
 
-1654102027 d:\tp2-algo2\tp2\cuento.h
+1654135074 d:\tp2-algo2\tp2\cuento.h
 	"lectura.h"
 
-1654102814 d:\tp2-algo2\tp2\lectura.h
+1654137007 d:\tp2-algo2\tp2\lectura.h
 	<string>
 	<iostream>
 	"escritor.h"
 
-1654101855 source:d:\tp2-algo2\tp2\lectura.cpp
+1654128215 source:d:\tp2-algo2\tp2\lectura.cpp
 	"lectura.h"
 
-1653874942 source:d:\tp2-algo2\tp2\main.cpp
+1654132281 source:d:\tp2-algo2\tp2\main.cpp
 	<iostream>
 	<fstream>
 	<string>
@@ -28,40 +28,53 @@
 	"novela.h"
 	"lista.h"
 
-1654041822 source:d:\tp2-algo2\tp2\poema.cpp
+1654132297 source:d:\tp2-algo2\tp2\poema.cpp
 	"poema.h"
 
-1654041775 d:\tp2-algo2\tp2\poema.h
+1654138686 d:\tp2-algo2\tp2\poema.h
 	"lectura.h"
 
-1654102190 source:d:\tp2-algo2\tp2\novela.cpp
+1654132288 source:d:\tp2-algo2\tp2\novela.cpp
 	"novela.h"
 
-1654102813 d:\tp2-algo2\tp2\novela.h
+1654138385 d:\tp2-algo2\tp2\novela.h
 	"lectura.h"
 	"genero.h"
 
-1654102181 source:d:\tp2-algo2\tp2\historica.cpp
+1654102813 source:d:\tp2-algo2\tp2\historica.cpp
 	"historica.h"
 
-1654102181 d:\tp2-algo2\tp2\historica.h
+1654136377 d:\tp2-algo2\tp2\historica.h
 	"novela.h"
 
-1654051361 source:d:\tp2-algo2\tp2\lista.cpp
+1654138952 source:d:\tp2-algo2\tp2\lista.cpp
 	"lista.h"
 
-1654102814 d:\tp2-algo2\tp2\lista.h
+1654137224 d:\tp2-algo2\tp2\lista.h
 	"nodo.h"
 
-1654102813 d:\tp2-algo2\tp2\nodo.h
+1654139053 d:\tp2-algo2\tp2\nodo.h
 	"escritor.h"
 
-1653871458 source:d:\tp2-algo2\tp2\nodo.cpp
+1654102813 source:d:\tp2-algo2\tp2\nodo.cpp
 	"nodo.h"
 
-1654048842 d:\tp2-algo2\tp2\genero.h
+1654138466 d:\tp2-algo2\tp2\genero.h
 	<string>
 
-1654049126 source:d:\tp2-algo2\tp2\genero.cpp
+1654102813 source:d:\tp2-algo2\tp2\genero.cpp
 	"genero.h"
+
+1654132982 source:d:\tp2-algo2\tp2\parser_escritor.cpp
+	"parser_ecritor.h"
+	<iostream>
+	<fstream>
+	<string>
+
+1654132982 d:\tp2-algo2\tp2\parser_ecritor.h
+	<iostream>
+	<string>
+	<fstream>
+	"escritor.h"
+	"lista.h"
 

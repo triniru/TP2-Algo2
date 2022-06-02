@@ -9,35 +9,40 @@ private:
 	Nodo* ultimo;
 
 public:
-	//Constructor
+	//----------Constructor
 	//PRE: -
-	//POS: construye una Lista vacía
+	//POS: Construye una Lista vacía.
 	Lista();
 
-	//Alta
-	//PRE: e es un Dato valido
-	//POS:
+
+	//----------Alta
+	//PRE: Elemento es un Dato valido.
+	//POS: Agrega un elemento a la Lista.
 	void alta(Dato elemento);
 
-	//Baja
-	//PRE: la lista no puede estar vacía
-	//POS:
+
+	//----------Baja
+	//PRE: La Lista no puede estar vacia.
+	//POS: Elimina un elemento de la Lista.
 	void baja(Dato elemento);
 
-	//Consulta
-	//PRE: la lista no puede estar vacía
-	//POS:
-	Dato consulta_primero();
 
-    //PRE
-    //POS
+	//----------Consulta
+	//PRE: La Lista no puede estar vacia.
+	//POS: Devuelve el primer elemento de la Lista.
+	Dato consulta_primero();
+    //PRE: La Lista no puede estar vacia.
+    //POS: Devuelve el ultimo elemento de la Lista.
     Dato consulta_ultimo();
 
-	//Vacia
+	//----------Vacia
 	//PRE: -
-	//POS: devuelve true si la lista está vacía, false de lo contrario
+	//POS: Devuelve true si la Lista está vacía, false de lo contrario.
 	bool vacia();
 
+	//----------
+	//PRE
+	//POS
 	//Destructor
 	~Lista();
 };

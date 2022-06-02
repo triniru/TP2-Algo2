@@ -8,55 +8,71 @@ using namespace std;
 
 class Escritor {
 protected:
+    int referencia;
     string nombre_y_apellido;
     string nacionalidad;
     int anio_nacimiento;
     int anio_fallecimiento;
 
 public:
-    //PRE
-    //POS
-    Escritor(string nombre_y_apellido, string nacionalidad, int anio_nacimiento, int anio_fallecimiento);
+    //----------Constructor----------
+    //PRE: -
+    //POS: Construye un Escritor con sus atributos.
+    Escritor(int referencia, string nombre_y_apellido, string nacionalidad, int anio_nacimiento, int anio_fallecimiento);
 
-    //PRE
-    //POS
-    string obtener_nombre_y_appellido();
-    //PRE
-    //POS
+
+    //----------Obtener----------
+    //PRE: -
+    //POS: Devuelve la referencia del Escritor.
+    int obtener_referencia();
+    //PRE: -
+    //POS: Devuelve el nombre y apellido del Escritor.
+    string obtener_nombre_y_apellido();
+    //PRE: -
+    //POS: Devuelve la nacionalidad del Escritor.
     string obtener_nacionalidad();
-    //PRE
-    //POS
+    //PRE: -
+    //POS: Devuelve el año de nacimiento del Escritor.
     int obtener_anio_nacimiento();
-    //PRE
-    //POS
+    //PRE: -
+    //POS: Devuelve el año de fallecimiento del Escritor.
     int obtener_anio_fallecimiento();
+    //PRE: -
+    //POS:
+    Escritor* obtener_direccion();
 
 
-    //PRE
-    //POS
+    //----------Cambiar----------
+    //PRE:
+    //POS:
     void cambiar_anio_fallecimiento(int nuevo_anio);
 
 
-    //PRE
-    //POS
+    //----------Mostrar----------
+    //PRE: El escritor puede ser (o no) anónimo.
+    //POS: Muestra nombre y apellido del Escritor. Este puede ser anónimo.
     void mostrar_nombre_escritor();
-    //PRE
-    //POS
+    //PRE: Si el escritor es anónimo, la nacionalidad es desconocida y por ende "¿?"
+    //POS: Muestra la nacionalidad del Escritor.
     void mostrar_nacionalidad();
-    //PRE
-    //POS
+    //PRE: -
+    //POS: Muestra el año de nacimiento del Escritor y si no se sabe es -1.
     void mostrar_anio_nacimiento();
-    //PRE
-    //POS
+    //PRE: -
+    //POS: Muestra el año de fallecimiento del Escritor. En caso de desconocerse, es -1.
     void mostrar_anio_fallecimiento();
-    //PRE
-    //POS
+    //PRE: -
+    //POS: Muestra al Escritor con todos sus atributos.
     void mostrar_escritor();
 
-    //PRE
-    //POS
+
+    //----------Comparar----------
+    //PRE: -
+    //POS: Compara los nombres y apellidos de dos escritores, si son iguales devuelve 0, de lo contrario devuelve -1.
     int comparar (Escritor* escritor_a_comparar);
 
+
+    //----------Destructor----------
     //PRE
     //POS
     ~Escritor();

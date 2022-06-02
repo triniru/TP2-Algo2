@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-    fstream newfile;
+    /*fstream newfile;
     newfile.open("archivos/01_casos_basicos_escritores.txt",ios::in);
     Lista* lista = new Lista();
     Escritor* escritor;
@@ -37,6 +37,6 @@ int main()
     //escritor.mostrar_escritor();
     //Novela rayuela("Rayuela", 88, 1963, &escritor, 'F');
     //rayuela.mostrar_novela();
-
+*/
     return 0;
 }
