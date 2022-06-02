@@ -11,35 +11,43 @@ private:
 	Nodo* siguiente;             //C++ permite hacer esto
 
 public:
-	//Constructor
+	//----------Constructor----------
 	//PRE: -
-	//POS: construye un nodo con elemento como dato, y siguiente y anterior en nullptr
+	//POS: Construye un nodo con elemento como dato, y siguiente y anterior en nullptr.
 	Nodo(Dato elemento);
 
-	//PRE: n es un puntero válido
-	//POS: cambia el puntero anterior por n
-	void cambiar_siguiente(Nodo* siguiente);
 
-    //PRE
-    //POS
-    void cambiar_anterior(Nodo* anterior);
-
-	//PRE
-	//POS
+	//----------Obtener----------
+    //PRE: -
+	//POS: Devuelve el Dato que contiene el nodo.
 	Dato obtener_dato();
-
-    //PRE
-    //POS
+    //PRE: -
+    //POS: Devuelve el puntero siguiente.
 	Nodo* obtener_siguiente();
-
-	//PRE
-	//POS
+	//PRE: -
+	//POS: Devuelve el puntero anterior.
 	Nodo* obtener_anterior();
 
-	//PRE
-	//POS
+
+	//----------Cambiar----------
+	//PRE: Siguiente es un puntero válido
+	//POS: Cambia el puntero siguiente por siguiente.
+	void cambiar_siguiente(Nodo* siguiente);
+    //PRE: Anterior es un puntero valido.
+    //POS: Cambia el puntero anterior por anterio.
+    void cambiar_anterior(Nodo* anterior);
+
+
+    //----------Borrar dato----------
+	//PRE: -
+	//POS: Borra el Dato del Nodo.
 	void borrar();
 
+
+	//----------Destructor----------
+	//PRE:
+	//POS
+    //~Nodo();
 };
 
 #endif // NODO_H_INCLUDED

@@ -37,7 +37,7 @@ void Lista :: baja(Dato elemento) {
             this->ultimo = aux->obtener_anterior();
         }
         aux->borrar();
-        delete aux;
+        delete aux;;
     }
 }
 

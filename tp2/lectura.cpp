@@ -22,7 +22,7 @@ void Lectura::mostrar_anio_publicacion() {
     cout << "Esta novela se publico en el anio " << anio_publicacion << endl;
 }
 
-void Lectura::mostrar_esctritor() {
+void Lectura::mostrar_escritor() {
     escritor->mostrar_nombre_escritor();
 }
 

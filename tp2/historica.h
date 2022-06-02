@@ -8,18 +8,30 @@ protected:
     char* tema;
 
 public:
-    //PRE
-    //POS
+    //----------Constructor----------
+    //PRE: -
+    //POS: Construye una novela de genero historica con sus atributos.
     Novela_historica (string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, genero_t genero, char* tema);
-    //PRE
-    //POS
+
+
+    //----------Obtener----------
+    //PRE:
+    //POS: Devuelve el tema de la Novela_Historica.
     char* obtener_tema();
-    //PRE
-    //POS
+
+
+    //----------Mostrar----------
+    //PRE: -
+    //POS: Muestra el tema de la Novela_historica
     void mostrar_tema();
-    //PRE
-    //POS
+    //PRE: -
+    //POS: Muestra toda la informacion de la Novela_historica
     void mostrar_todo();
+
+
+    //----------Destructor----------
+    //PRE: -
+    //POS:
     ~Novela_historica();
 };
 
