@@ -13,7 +13,8 @@ británica
 (3) 
 Stephen Edwin King 
 estadounidense 
-1947 
+1947
+0
 
 (4) 
 Alfonsina Storni 
@@ -24,4 +25,5 @@ argentina
 (5) 
 Ken Follet 
 galés 
-1949 
+1949
+-1

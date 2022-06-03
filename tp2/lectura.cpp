@@ -25,7 +25,6 @@ Escritor* Lectura :: obtener_escritor(){
 }
 
 
-
 void Lectura::mostrar_titulo() {
     cout << "El titulo de la novela es: " << titulo << endl;
 }

@@ -13,11 +13,9 @@ using namespace std;
 int main()
 {
     Lista<Escritor*>* lista_escritores = new Lista<Escritor*>();
-    //Lista<Escritor*>* lista_escritores = nullptr;
     Parser_escritor parser_escritor = Parser_escritor(lista_escritores, "archivos/01_casos_basicos_escritores.txt");
     parser_escritor.procesar_entrada();
     mostrar_escritores(lista_escritores);
-
 
     return 0;
 }

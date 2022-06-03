@@ -10,7 +10,7 @@ class Nodo {
 private:
 	Dato dato;
 	Nodo* anterior;
-	Nodo* siguiente;             //C++ permite hacer esto
+	Nodo* siguiente;
 
 public:
 	//----------Constructor----------

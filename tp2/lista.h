@@ -160,7 +160,7 @@ Tipo Lista<Tipo> :: siguiente(){
 //Destructor
 template < class Tipo >
 Lista< Tipo > :: ~Lista() {
-    while(!vacia() /*this->primero != nullptr*/){
+    while(!vacia()){
         baja(this->primero->obtener_dato());
     }
 }

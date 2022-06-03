@@ -10,7 +10,6 @@
 
 using namespace std;
 
-
 class Parser_escritor{
 private:
     string entrada;

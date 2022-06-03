@@ -15,15 +15,13 @@ Lista<Escritor*>* Parser_escritor :: procesar_entrada() {
     Escritor* escritor;
 
     string aux;
-    //int i = 1;
 
     while(!archivo_nuevo.eof()){
         getline(archivo_nuevo, aux);
         aux = aux.substr(1, aux.length() - 2);
         referencia = stoi(aux);
         getline(archivo_nuevo, nombre_y_apellido);
-        cout << nombre_y_apellido << endl;
-        if(nombre_y_apellido.compare("ANONIMO") == 0) {   //CHEQUEARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+        if(nombre_y_apellido.compare("ANONIMO") == 0) {
             getline(archivo_nuevo, aux);
             nacionalidad = "¿?";
             getline(archivo_nuevo, aux);
@@ -56,7 +54,6 @@ Lista<Escritor*>* Parser_escritor :: procesar_entrada() {
             getline(archivo_nuevo, aux);
 
             escritor = new Escritor(referencia, nombre_y_apellido, nacionalidad, anio_nacimiento, anio_nacimiento);
-            escritor->mostrar_escritor();
             this->lista_escritores->alta(escritor);
         }
     }
@@ -64,3 +61,4 @@ Lista<Escritor*>* Parser_escritor :: procesar_entrada() {
 }
 
 Parser_escritor :: ~Parser_escritor(){}
+
