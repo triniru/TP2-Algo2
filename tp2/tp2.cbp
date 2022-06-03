@@ -42,15 +42,26 @@
 		<Unit filename="historica.h" />
 		<Unit filename="lectura.cpp" />
 		<Unit filename="lectura.h" />
+<<<<<<< HEAD
+		<Unit filename="lista.h" />
+		<Unit filename="main.cpp" />
+=======
 		<Unit filename="lista.cpp" />
 		<Unit filename="lista.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="nodo.cpp" />
+>>>>>>> main
 		<Unit filename="nodo.h" />
 		<Unit filename="novela.cpp" />
 		<Unit filename="novela.h" />
+		<Unit filename="parser_ecritor.h" />
+		<Unit filename="parser_escritor.cpp" />
+		<Unit filename="parser_lectura.cpp" />
+		<Unit filename="parser_lectura.h" />
 		<Unit filename="poema.cpp" />
 		<Unit filename="poema.h" />
+		<Unit filename="reportes.cpp" />
+		<Unit filename="reportes.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

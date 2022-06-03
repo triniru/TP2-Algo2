@@ -12,8 +12,8 @@ using namespace std;
 
 class Parser_escritor{
 private:
-    char* entrada;
-    Lista* lista_escritores;
+    string entrada;
+    Lista<Escritor*>* lista_escritores;
     int referencia;
     string nombre_y_apellido;
     string nacionalidad;
@@ -23,16 +23,13 @@ private:
 public:
     //PRE
     //POS
-    Parser_escritor(Lista* lista, char** argv);
+    Parser_escritor(Lista<Escritor*>* lista, string nombre_archivo);
     //PRE
     //POS
-    Escritor* procesar_entrada();
+    Lista<Escritor*>* procesar_entrada();
     //PRE
     //POS
     ~Parser_escritor();
-
-private:
-    void escritor_es_anonimo();
 };
 
 #endif // PARSER_ECRITOR_H_INCLUDED

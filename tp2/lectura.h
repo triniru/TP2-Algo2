@@ -26,6 +26,15 @@ public:
     //PRE: -
     //POS: Devuelve el titulo de la Lectura.
     string obtener_titulo();
+    //PRE
+    //POS
+    int obtener_minutos_lectura();
+    //PRE
+    //POS
+    int obtener_anio_punlicacion();
+    //PRE
+    //POS
+    Escritor* obtener_escritor();
 
 
     //----------Mostrar----------

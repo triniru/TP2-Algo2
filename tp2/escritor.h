@@ -37,9 +37,6 @@ public:
     //PRE: -
     //POS: Devuelve el año de fallecimiento del Escritor.
     int obtener_anio_fallecimiento();
-    //PRE: -
-    //POS:
-    Escritor* obtener_direccion();
 
 
     //----------Cambiar----------

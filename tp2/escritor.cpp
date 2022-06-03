@@ -29,10 +29,6 @@ int Escritor :: obtener_anio_fallecimiento() {
     return anio_fallecimiento;
 }
 
-/*Escritor* Escritor :: obtener_direccion() {
-   // return &Escritor();
-}*/
-
 
 void Escritor :: cambiar_anio_fallecimiento(int nuevo_anio) {
     if( nuevo_anio > anio_nacimiento) {
@@ -45,7 +41,7 @@ void Escritor :: mostrar_nombre_escritor() {
 }
 
 void Escritor :: mostrar_nacionalidad() {
-    if (nacionalidad == "ï¿½?") {
+    if (nacionalidad == "¿?") {
         cout << "No se conoce la nacionalidad de " << nombre_y_apellido << "." << endl;
     } else {
         cout << "La nacionalidad de " << nombre_y_apellido << " es " << nacionalidad << endl;
@@ -74,6 +70,8 @@ void Escritor :: mostrar_escritor() {
     mostrar_anio_nacimiento();
     mostrar_anio_fallecimiento();
 }
+
+
 
 int Escritor :: comparar(Escritor* escritor_a_comparar) {
     if(this->obtener_nombre_y_apellido() == escritor_a_comparar->obtener_nombre_y_apellido()) {

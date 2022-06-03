@@ -2,13 +2,15 @@
 #define NODO_H_INCLUDED
 #include "escritor.h"
 
-typedef Escritor* Dato;
+//typedef Escritor* Dato;
+
+template < class Dato >
 
 class Nodo {
 private:
 	Dato dato;
 	Nodo* anterior;
-	Nodo* siguiente;             //C++ permite hacer esto
+	Nodo* siguiente;
 
 public:
 	//----------Constructor----------
@@ -47,7 +49,49 @@ public:
 	//----------Destructor----------
 	//PRE:
 	//POS
-    //~Nodo();
+    ~Nodo();
 };
+
+
+template < class Dato >
+Nodo< Dato > :: Nodo(Dato elemento) {
+    this->dato = elemento;
+    this->anterior = nullptr;
+    this->siguiente = nullptr;
+}
+
+template < class Dato >
+void Nodo< Dato > :: cambiar_siguiente(Nodo* siguiente) {
+    this->siguiente = siguiente;
+}
+
+template < class Dato >
+void Nodo< Dato > :: cambiar_anterior(Nodo* anterior) {
+    this->anterior = anterior;
+}
+
+template < class Dato >
+Dato Nodo< Dato > :: obtener_dato() {
+    return this->dato;
+}
+
+template < class Dato >
+Nodo<Dato>* Nodo< Dato > :: obtener_siguiente() {
+    return this->siguiente;
+}
+
+template < class Dato >
+Nodo<Dato>* Nodo< Dato > :: obtener_anterior() {
+    return this->anterior;
+}
+
+template < class Dato >
+void Nodo< Dato > :: borrar() {
+    delete this->dato;
+}
+
+template < class Dato >
+Nodo< Dato > :: ~Nodo() {
+}
 
 #endif // NODO_H_INCLUDED
