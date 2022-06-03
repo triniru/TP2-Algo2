@@ -24,3 +24,4 @@ void Cuento :: mostrar_todo() {
 
 Cuento :: ~Cuento(){}
 
+//JBalcc-patch-1
