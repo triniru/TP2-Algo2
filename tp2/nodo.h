@@ -8,6 +8,7 @@ template < class Dato >
 
 class Nodo {
 private:
+
 	Dato dato;
 	Nodo* anterior;
 	Nodo* siguiente;
@@ -32,7 +33,7 @@ public:
 
 
 	//----------Cambiar----------
-	//PRE: Siguiente es un puntero válido
+	//PRE: Siguiente es un puntero válido.
 	//POS: Cambia el puntero siguiente por siguiente.
 	void cambiar_siguiente(Nodo* siguiente);
     //PRE: Anterior es un puntero valido.
@@ -48,50 +49,61 @@ public:
 
 	//----------Destructor----------
 	//PRE:
-	//POS
+	//POS: Destructor del nodo.
     ~Nodo();
 };
 
 
+
+//Constructor
 template < class Dato >
-Nodo< Dato > :: Nodo(Dato elemento) {
+Nodo<Dato> :: Nodo(Dato elemento) {
+
     this->dato = elemento;
     this->anterior = nullptr;
     this->siguiente = nullptr;
+
 }
 
+//Obtener
 template < class Dato >
-void Nodo< Dato > :: cambiar_siguiente(Nodo* siguiente) {
-    this->siguiente = siguiente;
-}
-
-template < class Dato >
-void Nodo< Dato > :: cambiar_anterior(Nodo* anterior) {
-    this->anterior = anterior;
-}
-
-template < class Dato >
-Dato Nodo< Dato > :: obtener_dato() {
+Dato Nodo<Dato> :: obtener_dato() {
     return this->dato;
 }
 
 template < class Dato >
-Nodo<Dato>* Nodo< Dato > :: obtener_siguiente() {
+Nodo<Dato>* Nodo<Dato> :: obtener_siguiente() {
     return this->siguiente;
 }
 
 template < class Dato >
-Nodo<Dato>* Nodo< Dato > :: obtener_anterior() {
+Nodo<Dato>* Nodo<Dato> :: obtener_anterior() {
     return this->anterior;
 }
 
+
+//Cambiar
 template < class Dato >
-void Nodo< Dato > :: borrar() {
-    delete this->dato;
+void Nodo<Dato> :: cambiar_siguiente(Nodo* siguiente) {
+    this->siguiente = siguiente;
 }
 
 template < class Dato >
-Nodo< Dato > :: ~Nodo() {
+void Nodo<Dato> :: cambiar_anterior(Nodo* anterior) {
+    this->anterior = anterior;
+}
+
+
+//Borrar Dato
+template < class Dato >
+void Nodo<Dato> :: borrar() {
+    delete this->dato;
+}
+
+
+//Destructor
+template < class Dato >
+Nodo<Dato> :: ~Nodo() {
 }
 
 #endif // NODO_H_INCLUDED

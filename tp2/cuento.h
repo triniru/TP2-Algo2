@@ -5,6 +5,7 @@
 
 class Cuento : public Lectura {
 protected:
+
     string libro;
 
 public:
@@ -13,22 +14,28 @@ public:
     //POS: Construye un Cuento con sus atributos.
     Cuento(string titulo, int minutos_lectura, int anio_publicacion, Escritor* escritor, string libro);
 
+
     //----------Obtener----------
     //PRE: -
-    //POS: Devuelve el nombre del libro en donde esta publicado el Cuento
+    //POS: Devuelve el nombre del libro en donde esta publicado el Cuento.
     string obtener_libro();
+    //PRE
+    //POS
+    //genero_t obtener_genero();
+
 
     //----------Mostrar----------
     //PRE: -
-    //POS: Muestra el nombre del libro en donde esta publicado el Cuento
+    //POS: Muestra el nombre del libro en donde esta publicado el Cuento.
     void mostrar_libro();
     //PRE: -
-    //POS: Muestra toda la informacion del Cuento
+    //POS: Muestra toda la informacion del Cuento.
     void mostrar_todo();
 
+
     //----------Destructor----------
-    //PRE
-    //POS
+    //PRE: -
+    //POS: -
     ~Cuento();
 };
 

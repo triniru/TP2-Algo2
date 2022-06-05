@@ -11,12 +11,12 @@ const char C = 'C';
 
 using namespace std;
 
-Parser_Lectura :: Parser_Lectura(Lista<Lectura*>* lista, string nombre_archivo) {
+Parser_lectura :: Parser_lectura(Lista<Lectura*>* lista, string nombre_archivo) {
     this->lista_lecturas = lista;
     this->entrada = nombre_archivo;
 }
 
-void Parser_Lectura :: obtener_datos_principales(ifstream& archivo_lectura, string& titulo, int* minutos_lectura,
+void Parser_lectura :: obtener_datos_principales(ifstream& archivo_lectura, string& titulo, int* minutos_lectura,
                                                 int* anio_publicacion) {
     string aux;
     getline(archivo_lectura, titulo);
@@ -27,30 +27,29 @@ void Parser_Lectura :: obtener_datos_principales(ifstream& archivo_lectura, stri
 
 }
 
-Escritor* Parser_Lectura :: obtener_escritor_desde_archivo(Lista<Escritor*>* lista_escritores, ifstream& archivo_lectura) {
+Escritor* Parser_lectura :: obtener_escritor_desde_archivo(Lista<Escritor*>* lista_escritores, ifstream& archivo_lectura) {
     string aux;
     getline(archivo_lectura, aux);
-    if(aux == "ANONIMO"){
+
+    if(aux == "ANONIMO") {
         return nullptr;
     }
+
     aux = aux.substr(1, aux.length() - 2);
     int referencia_autor = stoi(aux);
-    return lista_escritores -> consulta_dato(referencia_autor);
+    return lista_escritores->consulta_dato(referencia_autor);
 }
 
 
-Lista<Lectura*>* Parser_Lectura :: procesar_entrada(Lista<Escritor*>* lista_escritores) {
+Lista<Lectura*>* Parser_lectura :: procesar_entrada(Lista<Escritor*>* lista_escritores) {
 
     ifstream archivo_lectura(entrada);
 
     Lista<Lectura*>* lista = new Lista<Lectura*>();
 
-    string titulo;
-    int minutos_lectura, anio_publicacion;
-    char tipo_de_lectura;
-    string aux, libro;
+    string aux;
 
-    while(!archivo_lectura.eof()){
+    while(!archivo_lectura.eof()) {
 
         getline(archivo_lectura, aux);
         tipo_de_lectura = aux[0];
@@ -58,8 +57,10 @@ Lista<Lectura*>* Parser_Lectura :: procesar_entrada(Lista<Escritor*>* lista_escr
         Escritor * escritor = obtener_escritor_desde_archivo(lista_escritores, archivo_lectura);
 
         if(tipo_de_lectura == N) {
+
             getline(archivo_lectura, aux);
             genero = string_a_genero(aux);
+
             if (genero == HISTORICA) {
 
                 getline(archivo_lectura, aux);
@@ -69,8 +70,8 @@ Lista<Lectura*>* Parser_Lectura :: procesar_entrada(Lista<Escritor*>* lista_escr
 
             } else {
 
-            Novela* novela = new Novela(titulo, minutos_lectura, anio_publicacion, escritor, genero);
-            lista->alta(novela);
+                Novela* novela = new Novela(titulo, minutos_lectura, anio_publicacion, escritor, genero);
+                lista->alta(novela);
 
             }
 
@@ -91,3 +92,5 @@ Lista<Lectura*>* Parser_Lectura :: procesar_entrada(Lista<Escritor*>* lista_escr
     }
     return lista;
 }
+
+Parser_lectura :: ~Parser_lectura(){}

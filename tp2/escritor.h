@@ -8,6 +8,7 @@ using namespace std;
 
 class Escritor {
 protected:
+
     int referencia;
     string nombre_y_apellido;
     string nacionalidad;
@@ -25,10 +26,10 @@ public:
     //PRE: -
     //POS: Devuelve la referencia del Escritor.
     int obtener_referencia();
-    //PRE: -
+    //PRE: El nombre y apellido del escritor debe ser un string sin tildes.
     //POS: Devuelve el nombre y apellido del Escritor.
     string obtener_nombre_y_apellido();
-    //PRE: -
+    //PRE: La nacionalidad debe ser un string sin tildes ni simbolos especiales.
     //POS: Devuelve la nacionalidad del Escritor.
     string obtener_nacionalidad();
     //PRE: -
@@ -40,16 +41,16 @@ public:
 
 
     //----------Cambiar----------
-    //PRE:
-    //POS:
+    //PRE: El nuevo_anio ingresado debe ser mayor a 0.
+    //POS: Modifica el a;o de fallecimiento del escritor.
     void cambiar_anio_fallecimiento(int nuevo_anio);
 
 
     //----------Mostrar----------
     //PRE: El escritor puede ser (o no) anónimo.
-    //POS: Muestra nombre y apellido del Escritor. Este puede ser anónimo.
+    //POS: Muestra nombre y apellido del Escritor (sin tildes). Este puede ser anónimo.
     void mostrar_nombre_escritor();
-    //PRE: Si el escritor es anónimo, la nacionalidad es desconocida y por ende "¿?"
+    //PRE: Si el escritor es anónimo, la nacionalidad es desconocida y por ende "¿?".
     //POS: Muestra la nacionalidad del Escritor.
     void mostrar_nacionalidad();
     //PRE: -
@@ -70,8 +71,8 @@ public:
 
 
     //----------Destructor----------
-    //PRE
-    //POS
+    //PRE: -
+    //POS: -
     ~Escritor();
 };
 
