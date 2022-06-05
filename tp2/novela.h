@@ -5,8 +5,8 @@
 #include "genero.h"
 
 class Novela: public Lectura {
-
 protected:
+
     genero_t genero;
 
 public:
@@ -32,8 +32,8 @@ public:
 
 
     //----------Destructor----------
-    //PRE
-    //POS
+    //PRE: -
+    //POS: -
     ~Novela();
 };
 

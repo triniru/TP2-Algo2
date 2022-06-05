@@ -4,12 +4,13 @@
 #include<string>
 #include <iostream>
 #include "escritor.h"
+#include "genero.h"
 
 using namespace std;
 
 class Lectura {
-
 protected:
+
     string titulo;
     int minutos_lectura;
     int anio_publicacion;
@@ -23,17 +24,17 @@ public:
 
 
     //----------Obtener----------
-    //PRE: -
+    //PRE: El titulo no debe contener tildes ni caracteres especiales.
     //POS: Devuelve el titulo de la Lectura.
     string obtener_titulo();
-    //PRE
-    //POS
+    //PRE: Los minutos de lectura deben ser un entero mayor a 0.
+    //POS: Devuelve los minutos de lectura.
     int obtener_minutos_lectura();
-    //PRE
-    //POS
-    int obtener_anio_punlicacion();
-    //PRE
-    //POS
+    //PRE: El anio_publicacion puede ser -1 en caso de saberse o un numero mayor o igual a 0.
+    //POS: Devuelve el anio de publicacion.
+    int obtener_anio_publicacion();
+    //PRE: El escritor puede o no ser anonimo.
+    //POS: Devuelve el escritor de la lectura.
     Escritor* obtener_escritor();
 
 
@@ -57,14 +58,18 @@ public:
 
     //----------Comparar----------
     //PRE: -
+    //POS: Compara los anios de publicacion de dos Lecturas, si son iguales devuelve 0,
+    //       de lo contrario devuelve 1 o -1 dependiendo del orden alfabetico.
+    int comparar(Lectura* lectura_a_comparar);
+    //PRE:
     //POS: Compara los titulos de dos Lecturas, si son iguales devuelve 0,
-    //       de lo contrario devuelve 1 o -1 dependiendo del orden alfabetico
-    int comparar(Lectura* lectura, Lectura* lectura_a_comparar);
+    //       de lo contrario devuelve 1 o -1 dependiendo del orden alfabetico.
+    int comparar_para_baja(Lectura* lectura_a_comparar);
 
 
     //----------Destructor----------
-    //PRE
-    //POS
+    //PRE: -
+    //POS: -
     virtual ~Lectura() = 0 ;
 };
 

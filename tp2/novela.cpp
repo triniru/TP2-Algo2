@@ -7,6 +7,12 @@ Novela :: Novela(string titulo, int minutos_lectura, int anio_publicacion, Escri
 
 }
 
+
+genero_t Novela :: obtener_genero() {
+    return genero;
+}
+
+
 void Novela :: mostrar_genero() {
     if(genero == HISTORICA) {
         cout << titulo << " es una novela historica." << endl;
@@ -23,7 +29,5 @@ void Novela :: mostrar_todo() {
     mostrar_genero();
 }
 
-genero_t Novela :: obtener_genero() {
-    return genero;
-}
+
 Novela :: ~Novela () {}

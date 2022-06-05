@@ -6,9 +6,11 @@ Poema :: Poema(string titulo, int minutos_lectura, int anio_publicacion, Escrito
         this->cantidad_versos = cantidad_versos;
 }
 
+
 int Poema :: obtener_cantidad_versos() {
     return cantidad_versos;
 }
+
 
 void Poema :: mostrar_cantidad_versos() {
     cout << "Este poema tiene " << cantidad_versos << " versos." << endl;
@@ -21,4 +23,6 @@ void Poema :: mostrar_todo() {
     mostrar_escritor();
     mostrar_cantidad_versos();
 }
+
+
 Poema :: ~Poema() {}

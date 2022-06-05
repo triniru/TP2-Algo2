@@ -1,0 +1,89 @@
+(1) 
+Julio Cortázar 
+argentino 
+1914 
+1984 
+
+(2) 
+Mary Shelley 
+británica 
+1797 
+1851 
+
+(3) 
+Stephen Edwin King 
+estadounidense 
+1947
+0
+
+(4) 
+Alfonsina Storni 
+argentina 
+1892 
+1938 
+
+(5) 
+Ken Follet 
+galés 
+1949
+-1
+
+(6)
+Jane Austen
+Gran Bretaña
+1775
+1817
+
+(7)
+Gabriela Mistral
+Chile
+1889
+1957
+
+(8)
+Haruki Murakami
+Japon
+1949
+-1
+
+(9)
+Rafael Luis
+Cuba
+1974
+-1
+
+(10)
+Edward Rutherfurd
+Inglaterra
+1948
+-1
+
+(11)
+Victoria Ocampo
+Argentina
+1890
+1979
+
+(12)
+Douglas Adams
+Gran Bretaña
+1952
+2001
+
+(13)
+Stefania Gil
+España
+-1
+-1
+
+(14)
+Javier Negrete
+España
+1964
+-1
+
+(15)
+Horacio Quiroga
+Uruguay
+1878
+1937

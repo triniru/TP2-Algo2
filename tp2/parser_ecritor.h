@@ -12,6 +12,7 @@ using namespace std;
 
 class Parser_escritor{
 private:
+
     string entrada;
     Lista<Escritor*>* lista_escritores;
     int referencia;
@@ -21,14 +22,14 @@ private:
     int anio_fallecimiento;
 
 public:
-    //PRE
-    //POS
+    //PRE: -
+    //POS: -
     Parser_escritor(Lista<Escritor*>* lista, string nombre_archivo);
-    //PRE
-    //POS
+    //PRE: -
+    //POS: -
     Lista<Escritor*>* procesar_entrada();
-    //PRE
-    //POS
+    //PRE: -
+    //POS: -
     ~Parser_escritor();
 };
 

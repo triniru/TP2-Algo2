@@ -5,6 +5,7 @@
 
 class Poema : public Lectura {
 protected:
+
     int cantidad_versos;
 
 public:
@@ -30,8 +31,8 @@ public:
 
 
     //----------Destructor----------
-    //PRE:
-    //POS:
+    //PRE: -
+    //POS: -
     ~Poema();
 };
 
