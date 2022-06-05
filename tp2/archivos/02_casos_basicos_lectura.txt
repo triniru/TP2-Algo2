@@ -1,53 +1,52 @@
-C 
-Casa Tomada 
-20 
-1951 
-Bestiario 
+C
+Casa Tomada
+20
+1951
+Bestiario
 (1)
- 
-N 
-Rayuela 
-2900 
-1963 
-FICCION 
-(1) 
-4
- 
-N 
-Misery 
-2100 
-1987 
-TERROR 
+
+N
+Rayuela
+2900
+1963
+FICCION
+(10)
+
+N
+Misery
+2100
+1987
+TERROR
 (3)
- 
-P 
-El Poema del Mío Cid 
-480 
-1140 
-3733 
-ANONIMO 
 
-P 
-Voy a dormir 
-1 
-1938 
-14 
-(4) 
+P
+El Poema del Mío Cid
+480
+1140
+3733
+(3)
 
-N 
-Frankestein 
-1600 
-1818 
-TERROR 
-(2) 
+P
+Voy a dormir
+1
+1938
+14
+(4)
 
-N 
-Una columna de fuego 
-4800 
-2017 
-HISTORICA 
-Guerra de religiones en Europa en la segunda mitad del siglo XVI 
-(5) 
+N
+Frankestein
+1600
+1818
+TERROR
+(2)
+
+N
+Una columna de fuego
+4800
+2017
+HISTORICA
+Guerra de religiones en Europa en la segunda mitad del siglo XVI
+(5)
 
 N
 Cementerio de animales
@@ -60,7 +59,7 @@ N
 Sense and Sensibility
 1400
 1811
-DREAMA
+DRAMA
 (6)
 
 N
@@ -98,32 +97,32 @@ Escucha la canción del viento
 FICCION
 (8)
 
-C 
+C
 Guanina y Sotomayor
-23 
-2010 
+23
+2010
 Cuentos y leyendas del caribe
 (9)
 
-C 
+C
 La doncella del bosque verde
 15
-2013 
-50 Historias de hadas 
-ANONIMO
+2013
+weeHistorias de hadas 
+(3)
 
 N
-Russka: La Novela de Rusia
+Russka La Novela de Rusia
 4881
 1991
-HISTORICA
-(10)
+FICCION
+(9)
 
 N
 París
 4200
 2012
-HISTORICA
+FICCION
 (10)
 
 P
@@ -131,7 +130,7 @@ Me preguntan
 1
 2008
 6
-ANONIMO
+(4)
 
 P
 Soneto
@@ -158,7 +157,8 @@ N
 Doctor Who: the Pirate Planet
 2008
 1978
-FICCION
+HISTORICA
+habla de doctores
 (12)
 
 N
@@ -169,17 +169,17 @@ SUSPENSO
 (13)
 
 N
-Un café al pasado
+Un cafe al pasado
 1020
 2016
-ROMANCE
+ROMANTICA
 (13)
 
 N
-La melodía del amor
+La melodia del amor
 825
 2016
-ROMANCE
+ROMANTICA
 (13)
 
 N
@@ -193,7 +193,7 @@ N
 El espartano
 5800
 2017
-HISTORICA
+FICCION
 (14)
 
 N

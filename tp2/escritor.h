@@ -68,7 +68,9 @@ public:
     //PRE: -
     //POS: Compara los nombres y apellidos de dos escritores, si son iguales devuelve 0, de lo contrario devuelve -1.
     int comparar (Escritor* escritor_a_comparar);
-
+    //PRE
+    //POS
+    int comparar_para_baja(Escritor* escritor_a_comparar);
 
     //----------Destructor----------
     //PRE: -

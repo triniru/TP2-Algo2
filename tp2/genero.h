@@ -11,6 +11,8 @@ typedef enum genero {DRAMA, COMEDIA, FICCION, SUSPENSO, TERROR, ROMANTICA, HISTO
 //PRE: Genero es una palabra dentro del enum genero.
 //POS: Asocia a genero con su genero_t.
 genero_t string_a_genero(string genero);
-
+//PRE
+//POS
+bool es_genero_valido(genero_t genero);
 
 #endif // GENERO_H_INCLUDED

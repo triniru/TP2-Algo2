@@ -18,7 +18,7 @@ char* Novela_historica :: obtener_tema() {
 
 
 void Novela_historica :: mostrar_tema() {
-    cout << "La novela " << titulo << " es sobre " << tema << endl;
+    cout << "La novela " << titulo << " es sobre " << tema << "." << endl;
 }
 
 void Novela_historica :: mostrar_todo() {

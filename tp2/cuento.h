@@ -19,9 +19,6 @@ public:
     //PRE: -
     //POS: Devuelve el nombre del libro en donde esta publicado el Cuento.
     string obtener_libro();
-    //PRE
-    //POS
-    //genero_t obtener_genero();
 
 
     //----------Mostrar----------
@@ -31,6 +28,9 @@ public:
     //PRE: -
     //POS: Muestra toda la informacion del Cuento.
     void mostrar_todo();
+    //PRE
+    //POS
+    void mostrar_si_genero_es_igual(genero_t genero){};
 
 
     //----------Destructor----------

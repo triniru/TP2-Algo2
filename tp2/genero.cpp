@@ -16,3 +16,7 @@ genero_t string_a_genero(string genero) {
     else
         return HISTORICA;
 }
+
+bool es_genero_valido(genero_t genero) {
+	return ((genero == DRAMA) || (genero == COMEDIA) || (genero == FICCION) || (genero == SUSPENSO) || (genero == TERROR) || (genero == ROMANTICA) || (genero == HISTORICA));
+}

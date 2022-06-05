@@ -1,30 +1,30 @@
-(1) 
-Julio Cortázar 
-argentino 
-1914 
-1984 
+(1)
+Julio Cortázar
+argentino
+1914
+1984
 
-(2) 
-Mary Shelley 
-británica 
-1797 
-1851 
+(2)
+Mary Shelley
+británica
+1797
+1851
 
-(3) 
-Stephen Edwin King 
-estadounidense 
+(3)
+Stephen Edwin King
+estadounidense
 1947
 0
 
-(4) 
-Alfonsina Storni 
-argentina 
-1892 
-1938 
+(4)
+Alfonsina Storni
+argentina
+1892
+1938
 
-(5) 
-Ken Follet 
-galés 
+(5)
+Ken Follet
+galés
 1949
 -1
 

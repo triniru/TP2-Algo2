@@ -54,6 +54,9 @@ public:
     //PRE: -
     //POS: Muestra todos los datos dependiendo del tipo de Lectura que sea(Novela, Novela Historica, Cuento, o Poema).
     virtual void mostrar_todo() = 0;
+    //PRE
+    //POS
+    virtual void mostrar_si_genero_es_igual(genero_t genero) = 0;
 
 
     //----------Comparar----------

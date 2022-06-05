@@ -18,6 +18,13 @@ void mostrar_lecturas_entre_anios(Lista<Lectura*>* lista_lectura);
 //PRE: -
 //POS: -
 void mostrar_lecturas_del_escritor(Lista<Lectura*>* lista_lecturas);
+//PRE
+//POS
+void mostrar_lecturas_por_genero(Lista<Lectura*>* lista_lecturas);
+
+//PRE
+//POS
+void mostrar_lectura_random(Lista<Lectura*>* lista_lecturas);
 
 
 
