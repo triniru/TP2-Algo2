@@ -42,7 +42,7 @@ void Escritor :: mostrar_nombre_escritor() {
 }
 
 void Escritor :: mostrar_nacionalidad() {
-    if (nacionalidad == "¿?") {
+    if (nacionalidad.compare("¿?")) {
         cout << "No se conoce la nacionalidad de " << nombre_y_apellido << "." << endl;
     } else {
         cout << nombre_y_apellido << "es " << nacionalidad << endl;
@@ -82,6 +82,9 @@ int Escritor :: comparar(Escritor* escritor_a_comparar) {
     } else {
         return -1;
     }
+}
+int Escritor :: comparar_para_baja(Escritor* escritor_a_comparar){
+    return comparar(escritor_a_comparar);
 }
 
 

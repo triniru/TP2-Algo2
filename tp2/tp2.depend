@@ -1,30 +1,31 @@
 # depslib dependency file v1.0
-1654408090 source:d:\tp2-algo2\tp2\escritor.cpp
+1654454357 source:d:\tp2-algo2\tp2\escritor.cpp
 	"escritor.h"
 
-1654285581 d:\tp2-algo2\tp2\escritor.h
+1654473501 d:\tp2-algo2\tp2\escritor.h
 	<iostream>
 	<string>
 
-1654405414 source:d:\tp2-algo2\tp2\cuento.cpp
+1654408963 source:d:\tp2-algo2\tp2\cuento.cpp
 	"cuento.h"
 
-1654405414 d:\tp2-algo2\tp2\cuento.h
+1654468342 d:\tp2-algo2\tp2\cuento.h
 	"lectura.h"
 
-1654405426 d:\tp2-algo2\tp2\lectura.h
+1654472525 d:\tp2-algo2\tp2\lectura.h
 	<string>
 	<iostream>
 	"escritor.h"
 	"genero.h"
 
-1654399095 source:d:\tp2-algo2\tp2\lectura.cpp
+1654473074 source:d:\tp2-algo2\tp2\lectura.cpp
 	"lectura.h"
 
-1654401392 source:d:\tp2-algo2\tp2\main.cpp
+1654470099 source:d:\tp2-algo2\tp2\main.cpp
 	<iostream>
 	<fstream>
 	<string>
+	<time.h>
 	"escritor.h"
 	"lectura.h"
 	"lista.h"
@@ -33,57 +34,57 @@
 	"reportes.h"
 	"menu.h"
 
-1654405414 source:d:\tp2-algo2\tp2\poema.cpp
+1654409728 source:d:\tp2-algo2\tp2\poema.cpp
 	"poema.h"
 
-1654405414 d:\tp2-algo2\tp2\poema.h
+1654472525 d:\tp2-algo2\tp2\poema.h
 	"lectura.h"
 
-1654286233 source:d:\tp2-algo2\tp2\novela.cpp
+1654468398 source:d:\tp2-algo2\tp2\novela.cpp
 	"novela.h"
 
-1654286299 d:\tp2-algo2\tp2\novela.h
+1654468342 d:\tp2-algo2\tp2\novela.h
 	"lectura.h"
 	"genero.h"
 
-1654404577 source:d:\tp2-algo2\tp2\historica.cpp
+1654473074 source:d:\tp2-algo2\tp2\historica.cpp
 	"historica.h"
 
-1654404576 d:\tp2-algo2\tp2\historica.h
+1654410921 d:\tp2-algo2\tp2\historica.h
 	"novela.h"
 
 1654138952 source:d:\tp2-algo2\tp2\lista.cpp
 	"lista.h"
 
-1654399654 d:\tp2-algo2\tp2\lista.h
+1654469274 d:\tp2-algo2\tp2\lista.h
 	"nodo.h"
 
-1654285417 d:\tp2-algo2\tp2\nodo.h
+1654411023 d:\tp2-algo2\tp2\nodo.h
 	"escritor.h"
 
 1654102813 source:d:\tp2-algo2\tp2\nodo.cpp
 	"nodo.h"
 
-1654388244 d:\tp2-algo2\tp2\genero.h
+1654472059 d:\tp2-algo2\tp2\genero.h
 	<string>
 
-1654388246 source:d:\tp2-algo2\tp2\genero.cpp
+1654471842 source:d:\tp2-algo2\tp2\genero.cpp
 	"genero.h"
 
-1654285151 source:d:\tp2-algo2\tp2\parser_escritor.cpp
-	"parser_ecritor.h"
+1654470251 source:d:\tp2-algo2\tp2\parser_escritor.cpp
 	<iostream>
 	<fstream>
 	<string>
+	"parser_ecritor.h"
 
-1654284906 d:\tp2-algo2\tp2\parser_ecritor.h
+1654411062 d:\tp2-algo2\tp2\parser_ecritor.h
 	<iostream>
 	<string>
 	<fstream>
 	"escritor.h"
 	"lista.h"
 
-1654401258 d:\tp2-algo2\tp2\parser_lectura.h
+1654463767 d:\tp2-algo2\tp2\parser_lectura.h
 	<iostream>
 	<string>
 	<fstream>
@@ -95,25 +96,25 @@
 	"cuento.h"
 	"poema.h"
 
-1654402489 d:\tp2-algo2\tp2\reportes.h
+1654467595 d:\tp2-algo2\tp2\reportes.h
 	"lista.h"
 	"lectura.h"
 	"escritor.h"
 
-1654401345 source:d:\tp2-algo2\tp2\parser_lectura.cpp
+1654471714 source:d:\tp2-algo2\tp2\parser_lectura.cpp
 	"parser_lectura.h"
 	<iostream>
 	<fstream>
 	<string>
 
-1654404184 source:d:\tp2-algo2\tp2\reportes.cpp
+1654472081 source:d:\tp2-algo2\tp2\reportes.cpp
 	"reportes.h"
 
-1654407953 source:d:\tp2-algo2\tp2\menu.cpp
+1654473156 source:d:\tp2-algo2\tp2\menu.cpp
 	<iostream>
 	"menu.h"
 
-1654406865 d:\tp2-algo2\tp2\menu.h
+1654410965 d:\tp2-algo2\tp2\menu.h
 	"lista.h"
 	"escritor.h"
 	"lectura.h"
@@ -121,7 +122,7 @@
 	"acciones.h"
 	"reportes.h"
 
-1654404184 d:\tp2-algo2\tp2\acciones.h
+1654409909 d:\tp2-algo2\tp2\acciones.h
 	"lista.h"
 	"escritor.h"
 	"lectura.h"
@@ -131,7 +132,7 @@
 	"cuento.h"
 	"poema.h"
 
-1654406577 source:d:\tp2-algo2\tp2\acciones.cpp
+1654473074 source:d:\tp2-algo2\tp2\acciones.cpp
 	<iostream>
 	"acciones.h"
 

@@ -29,6 +29,9 @@ public:
     //PRE: -
     //POS: Muestra toda la informacion de la novela.
     void mostrar_todo();
+    //PRE
+    //POS
+    void mostrar_si_genero_es_igual(genero_t genero);
 
 
     //----------Destructor----------

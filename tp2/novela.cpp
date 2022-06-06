@@ -29,5 +29,9 @@ void Novela :: mostrar_todo() {
     mostrar_genero();
 }
 
+void Novela :: mostrar_si_genero_es_igual(genero_t genero){
+    if(this->genero == genero)
+        this->mostrar_todo();
+};
 
 Novela :: ~Novela () {}

@@ -10,6 +10,7 @@ private:
 	Nodo<Tipo>* primero;
 	Nodo<Tipo>* ultimo;
 	Nodo<Tipo>* actual;
+	int cantidad;
 
 public:
 	//----------Constructor----------
@@ -40,6 +41,9 @@ public:
     //PRE
     //POS
     Tipo consulta_dato(int posicion);
+    //PRE
+    //POS
+    int consulta_cantidad();
 
 
 	//----------Buscar----------
@@ -78,6 +82,7 @@ Lista<Tipo> :: Lista() {
     this->primero = nullptr;
     this->ultimo = nullptr;
     this->actual = nullptr;
+    this->cantidad = 0;
 
 }
 
@@ -114,6 +119,7 @@ void Lista<Tipo> :: alta(Tipo elemento) {
             nodo->obtener_anterior()->cambiar_siguiente(nodo);
         }
     }
+    this->cantidad++;
 }
 
 //Baja
@@ -143,6 +149,7 @@ void Lista<Tipo> :: baja(Tipo elemento) {
 
         aux->borrar();
         delete aux;
+        this->cantidad--;
     }
 }
 
@@ -173,9 +180,15 @@ Tipo Lista<Tipo> :: consulta_dato(int posicion) {
 
     while(contador < posicion ) {
         aux = aux->obtener_siguiente();
+        contador++;
     }
 
     return aux->obtener_dato();
+}
+
+template < class Tipo >
+int Lista<Tipo> :: consulta_cantidad(){
+    return cantidad;
 }
 
 //Buscar
@@ -194,8 +207,6 @@ Tipo Lista<Tipo> :: buscar(Tipo dato_a_buscar){
         return nullptr;
     return aux;
 }
-
-
 
 
 //Vacia

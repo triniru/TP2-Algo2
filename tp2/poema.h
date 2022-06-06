@@ -28,6 +28,9 @@ public:
     //PRE: -
     //POS: Muestra toda la informacion del Poema.
     void mostrar_todo();
+    //PRE
+    //POS
+    void mostrar_si_genero_es_igual(genero_t genero){};
 
 
     //----------Destructor----------

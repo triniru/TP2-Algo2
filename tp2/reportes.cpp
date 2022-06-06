@@ -20,8 +20,6 @@ void mostrar_lecturas(Lista<Lectura*>* lista_lectura) {
     }
 }
 
-
-
 void mostrar_lecturas_entre_anios(Lista<Lectura*>* lista_lectura){
     lista_lectura->inicializar();
 
@@ -43,20 +41,45 @@ void mostrar_lecturas_entre_anios(Lista<Lectura*>* lista_lectura){
 
 }
 
-
 void mostrar_lecturas_del_escritor(Lista<Lectura*>* lista_lecturas) {
 
     lista_lecturas->inicializar();
 
-    cout << "Ingrese el nombre del autor del cual le gustaria listar sus lecturas" << endl;
+    cout << "Ingrese, sin tildes ni caracteres esoeciales (por ejemplo poner anio), el nombre del autor del cual le gustaria listar sus lecturas" << endl;
     string nombre_autor;
-    cin >> nombre_autor;
+    getline(cin, nombre_autor, '\n');
 
     while(lista_lecturas->hay_siguiente()) {
         Lectura* lectura_actual = lista_lecturas->siguiente();
-
-        if(lectura_actual->obtener_escritor()->obtener_nombre_y_apellido() == nombre_autor)
+        if(lectura_actual->obtener_escritor()->obtener_nombre_y_apellido() == nombre_autor){
             lectura_actual->mostrar_todo();
+            cout << endl;
+        }
     }
 
+}
+
+void mostrar_lecturas_por_genero(Lista<Lectura*>* lista_lecturas) {
+
+    lista_lecturas->inicializar();
+
+    cout << "Ingrese en mayusculas el genero del cual le gustaria listar sus lecturas. Los generos validos son: DRAMA, COMEDIA, FICCION, SUSPENSO, TERROR, ROMANTICA E HISTORICA." << endl;
+    string genero;
+    getline(cin, genero, '\n');
+    while(!es_genero_valido(string_a_genero(genero)))
+        cout << "El genero no es valido. Por favor, ingrese el genero nuevamente." << endl;
+
+    while(lista_lecturas->hay_siguiente()) {
+        Lectura* lectura_actual = lista_lecturas->siguiente();
+        lectura_actual->mostrar_si_genero_es_igual(string_a_genero(genero));
+        cout << endl;
+    }
+
+}
+
+void mostrar_lectura_random(Lista<Lectura*>* lista_lecturas){
+
+    int posicion_random = (rand() % lista_lecturas->consulta_cantidad()) + 1;
+    Lectura* lectura_random = lista_lecturas->consulta_dato(posicion_random);
+    lectura_random->mostrar_todo();
 }
