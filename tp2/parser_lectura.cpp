@@ -11,7 +11,7 @@ const char C = 'C';
 
 using namespace std;
 
-Parser_lectura :: Parser_lectura(Lista<Lectura*>* lista, string nombre_archivo) {
+Parser_lectura :: Parser_lectura(Lista<Lectura*>* lista, char* nombre_archivo) {
     this->lista_lecturas = lista;
     this->entrada = nombre_archivo;
 }

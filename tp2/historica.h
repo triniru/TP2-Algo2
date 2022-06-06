@@ -7,7 +7,6 @@ class Novela_historica : public Novela {
 protected:
 
     char* tema;
-    int tamanio_tema;
 
 public:
     //----------Constructor----------

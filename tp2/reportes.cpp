@@ -17,6 +17,7 @@ void mostrar_lecturas(Lista<Lectura*>* lista_lectura) {
     while(lista_lectura->hay_siguiente()) {
         Lectura* lectura_actual = lista_lectura->siguiente();
         lectura_actual->mostrar_todo();
+        cout << endl;
     }
 }
 
@@ -35,8 +36,10 @@ void mostrar_lecturas_entre_anios(Lista<Lectura*>* lista_lectura){
     while(lista_lectura->hay_siguiente()) {
         Lectura* lectura_actual = lista_lectura->siguiente();
 
-        if(lectura_actual->obtener_anio_publicacion() >= anio_menor && lectura_actual->obtener_anio_publicacion() <= anio_mayor)
+        if(lectura_actual->obtener_anio_publicacion() >= anio_menor && lectura_actual->obtener_anio_publicacion() <= anio_mayor){
             lectura_actual->mostrar_todo();
+            cout << endl;
+        }
     }
 
 }
@@ -82,4 +85,5 @@ void mostrar_lectura_random(Lista<Lectura*>* lista_lecturas){
     int posicion_random = (rand() % lista_lecturas->consulta_cantidad()) + 1;
     Lectura* lectura_random = lista_lecturas->consulta_dato(posicion_random);
     lectura_random->mostrar_todo();
+    cout << endl;
 }

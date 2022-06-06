@@ -26,7 +26,7 @@ public:
 	//----------Baja----------
 	//PRE: La Cola no puede estar vacia.
 	//POS: Elimina un elemento de la Cola.
-	void baja(Tipo elemento);
+	void baja();
 
 
 	//----------Consulta----------
@@ -55,6 +55,7 @@ public:
 template < class Tipo >
 Cola<Tipo> :: Cola() {
     this->primero = nullptr;
+    this->ultimo = nullptr;
 }
 
 
@@ -78,17 +79,19 @@ void Cola<Tipo> :: alta(Tipo elemento) {
 
 //Baja
 template < class Tipo >
-void Cola<Tipo> :: baja(Tipo elemento) {
+void Cola<Tipo> :: baja() {
+
+    if(this->primero == nullptr)
+        return;
 
     Nodo<Tipo>* aux = this->primero;
 
-    if(this->primero != nullptr) {
+    if (aux->obtener_siguiente() != nullptr)
         aux->obtener_siguiente()->cambiar_anterior(nullptr);
-        this->primero = aux->obtener_siguiente();
-    }
+    this->primero = aux->obtener_siguiente();
 
-    aux->borrar();
-    delete aux;
+    //aux->borrar();
+    //delete aux;         Borro el delete porque sino pierdo la referencia al dato de la lista.
 }
 
 
@@ -101,11 +104,6 @@ Tipo Cola<Tipo> :: consulta_primero() {
 
     else
         return nullptr;
-}
-
-template < class Tipo >
-Tipo Cola<Tipo> :: consulta_dato(int posicion) {
-    return this->primero->obtener_dato();
 }
 
 
@@ -121,7 +119,7 @@ template < class Tipo >
 Cola<Tipo> :: ~Cola() {
 
     while(!vacia()) {
-        baja(this->primero->obtener_dato());
+        baja();
     }
 }
 

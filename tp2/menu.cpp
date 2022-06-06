@@ -99,7 +99,7 @@ void Menu :: procesar_opcion_menu(char opcion) {
         case '2' : iniciar_submenu_2(); break ;
         case '3' : iniciar_submenu_3(); break ;
         case '4' : mostrar_lectura_random(lista_lecturas); menu_pausa(); break ;
-        case '5' : menu_pausa(); break ;
+        case '5' : encolar(lista_lecturas); menu_pausa(); break ;
         case '6' : break ;
         default: cout << endl << "La opcion seleccionada no es valida." << endl; iniciar_menu(); break;
    }

@@ -21,6 +21,7 @@ Escritor* crear_escritor(Lista<Escritor*>* lista_escritores);
 void agregar_escritor(Lista<Escritor*>* lista_escritores);
 void cambiar_dato_escritor(Lista<Escritor*>* lista_escritores);
 
+void encolar(Lista<Lectura*>* lista_lecturas);
 
 
 #endif // ACCIONES_H_INCLUDED

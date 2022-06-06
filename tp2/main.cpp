@@ -12,17 +12,21 @@ using namespace std;
 #include "reportes.h"
 #include "menu.h"
 
-int main()
+int main(int argc, char** argv)
 {
     srand((unsigned)time(NULL));
 
+    if(argc < 3){
+        cout << "La cantidad de argumentos no es valida." << endl;
+        return -1;
+    }
 
     Lista<Escritor*>* lista_escritores = new Lista<Escritor*>();
-    Parser_escritor parser_escritor = Parser_escritor(lista_escritores, "archivos/02_casos_basicos_escritores.txt");
+    Parser_escritor parser_escritor = Parser_escritor(lista_escritores, argv[1]);
     parser_escritor.procesar_entrada();
 
     Lista<Lectura*>* lista_lecturas = new Lista<Lectura*>();
-    Parser_lectura parser_lectura = Parser_lectura(lista_lecturas, "archivos/02_casos_basicos_lectura.txt");
+    Parser_lectura parser_lectura = Parser_lectura(lista_lecturas, argv[2]);
     parser_lectura.procesar_entrada(lista_escritores);
 
 

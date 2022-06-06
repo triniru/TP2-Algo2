@@ -28,8 +28,6 @@ void Novela_historica :: mostrar_todo() {
 
 
 Novela_historica :: ~Novela_historica() {
-    if (tamanio_tema > 0){
-        delete []tema;
-    }
+    delete[] tema;
 }
 

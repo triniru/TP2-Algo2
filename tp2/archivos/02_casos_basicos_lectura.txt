@@ -1,225 +1,41 @@
 C
-Casa Tomada
+Cuento20
 20
 1951
 Bestiario
 (1)
 
 N
-Rayuela
-2900
+Novela15
+15
 1963
 FICCION
 (10)
 
 N
-Misery
-2100
+Novela56
+56
 1987
 TERROR
 (3)
 
-P
-El Poema del Mío Cid
-480
-1140
-3733
-(3)
-
-P
-Voy a dormir
-1
-1938
-14
-(4)
-
-N
-Frankestein
-1600
-1818
-TERROR
-(2)
-
-N
-Una columna de fuego
-4800
-2017
-HISTORICA
-Guerra de religiones en Europa en la segunda mitad del siglo XVI
-(5)
-
-N
-Cementerio de animales
-950
-1983
-TERROR
-(3)
-
-N
-Sense and Sensibility
-1400
-1811
-DRAMA
-(6)
-
-N
-La cúpula
-5800
-2009
-FICCION
-(3)
-
-P 
-​La Mujer Fuerte​ 
-1 
-1922 
-14 
-(7) 
-
-P 
-​​El Dios Triste
-2 
-1922 
-20
-(7) 
-
-P 
-La memoria divina
-3
-1938
-31
-(7)
-
-N
-Escucha la canción del viento
-1580
-1979
-FICCION
-(8)
-
 C
-Guanina y Sotomayor
+Cuento23
 23
-2010
-Cuentos y leyendas del caribe
-(9)
-
-C
-La doncella del bosque verde
-15
-2013
-weeHistorias de hadas 
-(3)
+1951
+Bestiario
+(1)
 
 N
-Russka La Novela de Rusia
-4881
-1991
-FICCION
-(9)
-
-N
-París
-4200
-2012
+Novela6
+6
+1963
 FICCION
 (10)
 
-P
-Me preguntan
-1
-2008
-6
-(4)
-
-P
-Soneto
-1
-1941
-14
-(11)
-
 N
-Orgullo y prejuicio
-2900
-1813
-ROMANTICA
-(6)
-
-N
-Guía del autoestopista galáctico
-1200
-1979
-COMEDIA
-(12)
-
-N
-Doctor Who: the Pirate Planet
-2008
-1978
-HISTORICA
-habla de doctores
-(12)
-
-N
-Ecos del pasado
-495
-2018
-SUSPENSO
-(13)
-
-N
-Un cafe al pasado
-1020
-2016
-ROMANTICA
-(13)
-
-N
-La melodia del amor
-825
-2016
-ROMANTICA
-(13)
-
-N
-It
-5500
-1986
+Novela10
+10
+1987
 TERROR
 (3)
-
-N
-El espartano
-5800
-2017
-FICCION
-(14)
-
-N
-Lux Aeterna
-1900
-1996
-FICCION
-(14)
-
-C 
-La tortuga gigante
-5
-1918
-Cuentos de la selva
-(15)
-
-C 
-La media de los flamencos
-7
-1918
-Cuentos de la selva
-(15)
-
-C 
-El loro plateado
-7
-1918
-Cuentos de la selva
-(15)

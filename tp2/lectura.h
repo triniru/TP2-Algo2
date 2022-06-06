@@ -62,12 +62,16 @@ public:
     //----------Comparar----------
     //PRE: -
     //POS: Compara los anios de publicacion de dos Lecturas, si son iguales devuelve 0,
-    //       de lo contrario devuelve 1 o -1 dependiendo del orden alfabetico.
+    //       de lo contrario devuelve 1 o -1 dependiendo de si es mayor o menor.
     int comparar(Lectura* lectura_a_comparar);
     //PRE:
     //POS: Compara los titulos de dos Lecturas, si son iguales devuelve 0,
     //       de lo contrario devuelve 1 o -1 dependiendo del orden alfabetico.
     int comparar_para_baja(Lectura* lectura_a_comparar);
+    //PRE:-
+    //POS: Compara los minutos en leer dos Lecturas, si son iguales devuelve 0,
+    //       de lo contrario devuelve 1 o -1 dependiendo de si es mayor o menor.
+    int comparar_minutos_lectura(Lectura* lectura, int minutos);
 
 
     //----------Destructor----------

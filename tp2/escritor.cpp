@@ -58,13 +58,13 @@ void Escritor :: mostrar_anio_nacimiento() {
 }
 
 void Escritor :: mostrar_anio_fallecimiento() {
-    if(this->anio_fallecimiento == -1) {
-        cout << "El escritor " << nombre_y_apellido << "se encuentra con vida o se desconoce su anio de fallecimiento." << endl;
+    cout << this->obtener_anio_fallecimiento() << endl;
+    if(this->obtener_anio_fallecimiento() == -1) {
+        cout << "El escritor " << nombre_y_apellido << " se encuentra con vida o se desconoce su anio de fallecimiento." << endl;
 
     } else {
         cout << nombre_y_apellido << "fallecio en el anio " << anio_fallecimiento << endl;
     }
-    cout << endl;
 }
 
 void Escritor :: mostrar_escritor() {
@@ -72,6 +72,7 @@ void Escritor :: mostrar_escritor() {
     mostrar_nacionalidad();
     mostrar_anio_nacimiento();
     mostrar_anio_fallecimiento();
+    cout << endl;
 }
 
 
