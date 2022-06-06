@@ -38,11 +38,11 @@ public:
     //PRE: La Lista no puede estar vacia.
     //POS: Devuelve el ultimo elemento de la Lista.
     Tipo consulta_ultimo();
-    //PRE
-    //POS
+    //PRE:
+    //POS:
     Tipo consulta_dato(int posicion);
-    //PRE
-    //POS
+    //PRE:
+    //POS:
     int consulta_cantidad();
 
 
@@ -50,6 +50,9 @@ public:
     //PRE
     //POS
     Tipo buscar(Tipo dato_a_buscar);
+    //PRE
+    //POS
+    Tipo buscar_minimo(Tipo inicial, int minimo_anterior);
 
 	//----------Vacia----------
 	//PRE: -
@@ -85,6 +88,7 @@ Lista<Tipo> :: Lista() {
     this->cantidad = 0;
 
 }
+
 
 //Alta
 template < class Tipo >
@@ -122,6 +126,7 @@ void Lista<Tipo> :: alta(Tipo elemento) {
     this->cantidad++;
 }
 
+
 //Baja
 template < class Tipo >
 void Lista<Tipo> :: baja(Tipo elemento) {
@@ -153,6 +158,7 @@ void Lista<Tipo> :: baja(Tipo elemento) {
     }
 }
 
+
 //Consulta
 template < class Tipo >
 Tipo Lista<Tipo> :: consulta_primero() {
@@ -165,12 +171,10 @@ Tipo Lista<Tipo> :: consulta_primero() {
 
 }
 
-
 template < class Tipo >
 Tipo Lista<Tipo> :: consulta_ultimo() {
     return this->ultimo->obtener_dato();
 }
-
 
 template < class Tipo >
 Tipo Lista<Tipo> :: consulta_dato(int posicion) {
@@ -191,6 +195,7 @@ int Lista<Tipo> :: consulta_cantidad(){
     return cantidad;
 }
 
+
 //Buscar
 template < class Tipo >
 Tipo Lista<Tipo> :: buscar(Tipo dato_a_buscar){
@@ -207,6 +212,30 @@ Tipo Lista<Tipo> :: buscar(Tipo dato_a_buscar){
         return nullptr;
     return aux;
 }
+
+template < class Tipo >
+Tipo Lista<Tipo> :: buscar_minimo(Tipo inicial, int minimo_anterior){
+
+    if(this->primero == nullptr)
+        return nullptr;
+
+    Tipo minimo = inicial;
+
+    this->actual = this->primero;
+
+    while(this->actual != nullptr){
+
+        Tipo dato_actual = this->actual->obtener_dato();
+
+        if(dato_actual->comparar_minutos_lectura(minimo, minimo_anterior) < 0){
+                minimo = dato_actual;
+        }
+        this->actual = this->actual->obtener_siguiente();
+    }
+
+    return minimo;
+}
+
 
 
 //Vacia

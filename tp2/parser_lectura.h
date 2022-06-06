@@ -33,7 +33,7 @@ private:
 public:
     //PRE: -
     //POS: -
-    Parser_lectura(Lista<Lectura*>* lista, string nombre_archivo);
+    Parser_lectura(Lista<Lectura*>* lista, char* nombre_archivo);
     //PRE: -
     //POS: -
     void obtener_datos_principales(ifstream& archivo_lectura);

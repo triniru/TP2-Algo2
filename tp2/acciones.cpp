@@ -1,6 +1,8 @@
 #include <iostream>
 
 #include "acciones.h"
+#include "cola.h"
+
 
 using namespace std;
 
@@ -172,3 +174,22 @@ void cambiar_dato_escritor(Lista<Escritor*>* lista_escritores){
 }
 
 
+//Encolar
+void encolar(Lista<Lectura*>* lista_lecturas){
+    Lectura* lectura_inicial = new Cuento("", 9999, 0, nullptr, "");
+
+    Cola<Lectura*>* cola = new Cola<Lectura*>();
+
+    int minutos_minimos = -1;
+    for(int i = 0; i < lista_lecturas->consulta_cantidad() ; i++){
+        Lectura* lectura_minima = lista_lecturas->buscar_minimo(lectura_inicial, minutos_minimos);
+        minutos_minimos = lectura_minima->obtener_minutos_lectura();
+        cola->alta(lectura_minima);
+    }
+
+    while (!cola->vacia()){
+        cola->consulta_primero()->mostrar_todo();
+        cout << endl;
+        cola->baja();
+    }
+}

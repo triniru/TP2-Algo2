@@ -36,11 +36,11 @@ Lista<Escritor*>* Parser_escritor :: procesar_entrada() {
             getline(archivo_nuevo, nacionalidad, '\n');
             getline(archivo_nuevo, aux, '\n');
 
-            if(aux.compare("\n")) {
+            if(aux.compare("\n") == 0) {
                 anio_nacimiento = -1;
                 getline(archivo_nuevo, aux, '\n');
 
-                if(aux.compare("\n")) {
+                if(aux.compare("\n") == 0) {
                     anio_fallecimiento = -1;
 
                 } else {
@@ -52,7 +52,7 @@ Lista<Escritor*>* Parser_escritor :: procesar_entrada() {
                 anio_nacimiento = stoi(aux);
                 getline(archivo_nuevo, aux, '\n');
 
-                if(aux.compare("\n")) {
+                if(aux.compare("\n") == 0) {
                     anio_fallecimiento = -1;
 
                 } else {
